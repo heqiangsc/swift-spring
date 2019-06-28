@@ -5,8 +5,6 @@ import com.jialing.swift.mvc.entity.Person;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
-import java.awt.*;
-
 @RequestMapping("/p")
 @RestController
 public class PersonRestController {
@@ -18,6 +16,12 @@ public class PersonRestController {
         person.setId(id);
         person.setName(name);
         return person;
+    }
+
+
+    @GetMapping("/npe")
+    public Person handleNPE() {
+       throw new NullPointerException("出错了");
     }
 
 
