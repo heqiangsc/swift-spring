@@ -1,13 +1,12 @@
-package com.jialing.swift.swiftspring;
+package com.jialing.swift.flux;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SwiftSpringApplication {
+public class SpringWebFluxApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(SwiftSpringApplication.class, args);
+        SpringApplication.run(SpringWebFluxApp.class, args);
     }
-
 }

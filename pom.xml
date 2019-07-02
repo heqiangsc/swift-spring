@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>swift-spring-mvc</module>
+        <module>swift-spring-flux</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
