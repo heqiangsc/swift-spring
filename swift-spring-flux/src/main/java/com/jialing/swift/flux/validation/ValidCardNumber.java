@@ -12,6 +12,7 @@ import java.lang.annotation.*;
 @Constraint(validatedBy = {CardNumberConstraintValidator.class})
 public @interface ValidCardNumber   {
 
+    boolean require() default true;
 
     String message() default "卡号不正确";
 
